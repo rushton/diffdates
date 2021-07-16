@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "diffdates"
-version = "1.0.0"
+version = "1.0.1"
 description = "A command line utility to get the difference between two dates in a given input line."
 authors = ["Nick Rushton <rushton.nicholas@gmail.com>"]
 license = "GNU GPLv3"

@@ -20,7 +20,7 @@ def diff_dates(line):
 
     matches = ISO_MATCHER.findall(line)
     if len(matches) > 1:
-        first_date, last_date = [ciso8601.parse_date(m) for m in matches[:2]]
+        first_date, last_date = [ciso8601.parse_datetime(m) for m in matches[:2]]
         diff = abs(int((first_date - last_date).total_seconds()))
         return diff
 
